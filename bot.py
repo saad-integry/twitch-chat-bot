@@ -38,6 +38,9 @@ class ChatBot:
                         display_name = display_badge[0].split('=')[1]
                         bits_badge = list(filter(lambda x: 'bits' in x,
                                                  response.split(':')[0].split(';')))
+                        index = bits_badge[0].index('bits/')
+                        bits_count = bits_badge[0][index+5:]
+                        print(f"{bits_count} bits received from {display_name}")
                     except Exception as e:
                         print(f'exception message: {str(e)}')
             sleep(1)
