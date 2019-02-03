@@ -5,9 +5,14 @@ This is a bare bones twitch Chat Bot. It works fine for simply listening to inco
 **Usage:**
 
 - Initialize a ChatBot object as follows:
-		bot = ChatBot('<channel_name>', 'oauth:<your_auth_token>', 'your_twitch_display_name')
+```
+bot = ChatBot('<channel_name>', 'oauth:<your_auth_token>', 'your_twitch_display_name')
+```
+
 - Start listening to incoming chat messages using the `.listen()` method:
-		bot.listen()
+```
+bot.listen()
+```
 
 **Common pitfalls**
 
